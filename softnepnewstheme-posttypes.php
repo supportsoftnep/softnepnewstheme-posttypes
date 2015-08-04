@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: SoftNEP News Theme Post Types
-Plugin URI: 
+Plugin URI: https://github.com/supportsoftnep/softnepnewstheme-posttypes
 Description: This plug in is required to create custom post type in SoftNEP News theme.
 Author: SoftNEP PVT LTD
 Version: 1
