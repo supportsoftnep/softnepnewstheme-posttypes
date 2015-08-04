@@ -13,8 +13,6 @@ Author URI: http://softnep.com
 */
 
 add_action('init', 'photogallery_init');
-/* SECTION - photogallery_custom_init */
-
 function photogallery_init() {
     $labels = array(
         'name' => _x('Photo Gallery', 'post type general name', 'softnepnews'),
@@ -30,7 +28,7 @@ function photogallery_init() {
         'parent_item_colon' => '',
         'menu_name' => __('Photo Gallery', 'softnepnews')
     );
-    // Some arguments and in the last line 'supports', we say to WordPress what features are supported on the Project post type  
+   
     $args = array(
         'labels' => $labels,
         'public' => true,
@@ -44,7 +42,7 @@ function photogallery_init() {
         'menu_position' => null,
         'supports' => array('title', 'editor', 'thumbnail')
     );
-    // We call this function to register the custom post type  
+    
     register_post_type('photo-gallery', $args);
 }
 
@@ -118,3 +116,4 @@ function videogallery_init() {
     // We call this function to register the custom post type  
     register_post_type('video-gallery', $args);
 }
+?>
